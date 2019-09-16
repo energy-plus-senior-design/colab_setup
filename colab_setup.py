@@ -1,9 +1,10 @@
+import os
 from google.colab import drive
 
 drive.mount('/content/drive')
 
-!rm -rf eplusparser && git clone https://github.com/energy-plus-senior-design/eplusparser.git
+os.system("rm -rf eplusparser && git clone https://github.com/energy-plus-senior-design/eplusparser.git")
 
-%cd eplusparser
-!pwd
-!pip install .
+os.system("cd eplusparser")
+os.system("pwd")
+os.system("pip install .")
